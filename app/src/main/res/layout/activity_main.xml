@@ -1,18 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/nota_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text=""
+        android:hint="@string/nota_1"
+        android:padding="20dp"
+        android:background="@color/gray"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:inputType="number"
+        android:maxLength="2"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/nota_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="@string/nota_2"
+        android:padding="20dp"
+        android:background="@color/gray"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:inputType="number"
+        android:maxLength="2"/>
+
+
+    <EditText
+        android:id="@+id/nota_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="@string/nota_3"
+        android:padding="20dp"
+        android:background="@color/gray"
+        android:layout_below="@id/nota_1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:inputType="number"
+        android:maxLength="2"/>
+
+    <EditText
+        android:id="@+id/nota_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="@string/nota_4"
+        android:padding="20dp"
+        android:background="@color/gray"
+        android:layout_below="@id/nota_2"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentRight="true"
+        android:inputType="number"
+        android:maxLength="2"/>
+
+    <EditText
+        android:id="@+id/faltas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="@string/numero_de_faltas"
+        android:padding="20dp"
+        android:background="@color/gray"
+        android:layout_below="@id/nota_3"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:maxLength="2"/>
+
+    <Button
+        android:id="@+id/bt_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/faltas"
+        android:layout_margin="30dp"
+        android:text="@string/calcular"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/dark_gray"
+        android:padding="20dp"
+        android:inputType="number"
+        android:maxLength="2"/>
+
+    <TextView
+        android:id="@+id/txt_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aluno foi Aprovado"
+        android:layout_below="@id/bt_calcular"
+        android:gravity="center"
+        android:textStyle="bold"/>
+</RelativeLayout>
