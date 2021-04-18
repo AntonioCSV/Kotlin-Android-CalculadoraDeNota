@@ -10,3 +10,6 @@ A grade calculator
 	- To be approved, the student need a final grade grather than or equal to 5 and cannot have more than 20 absences.
 	- If it has more than 20 absences, the student's reproved by absences.
 	- If it has a grade less than 5, the student's reproved by grade.
+	
+### Screenshot
+![](https://raw.githubusercontent.com/AntonioCSV/Kotlin-Android-CalculadoraDeNota/main/screenshot.png)
